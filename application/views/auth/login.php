@@ -15,23 +15,23 @@
                                 <?= $this->session->flashdata('message'); ?>
                                 <form class="user" method="post" action="<?= base_url('auth/'); ?>">
                                     <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" id="Email" name="email" value="<?= set_value('email'); ?>" placeholder="Enter Email Address...">
+                                        <input type="text" class="form-control form-control-user" id="email" name="email" value="<?= set_value('email'); ?>" placeholder="Masukan email anda..">
                                         <?= form_error('email', '<small class="text-danger ml-3">', '</small>') ?>
 
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control form-control-user" name="password" id="Password" placeholder="Password">
+                                        <input type="password" class="form-control form-control-user" name="password" id="Password" placeholder="Isikan password anda..">
                                         <?= form_error('password', '<small class="text-danger ml-3">', '</small>') ?>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-user btn-block">
-                                        Login
+                                    <button type="submit" class="btn btn-success btn-user btn-block">
+                                        Masuk
                                     </button>
                                     <hr>
                                     <div class="text-center">
                                         <a class="small" href="forgot-password.html">Lupa Password?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="<?= base_url('auth/register') ?>">Register Account?</a>
+                                        <a class="small" href="<?= base_url('auth/register') ?>">Daftar Akun?</a>
                                     </div>
                             </div>
                         </div>

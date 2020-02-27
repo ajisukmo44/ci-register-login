@@ -11,32 +11,32 @@
                           </div>
                           <form class="user" method="post" action="<?= base_url('auth/register'); ?>">
                               <div class="form-group">
-                                  <input type="name" class="form-control form-control-user" name="name" id="name" value="<?= set_value('name'); ?>" placeholder="Full Name">
+                                  <input type="name" class="form-control form-control-user" name="name" id="name" value="<?= set_value('name'); ?>" placeholder="Nama anda..">
                                   <?= form_error('name', '<small class="text-danger ml-3">', '</small>') ?>
                               </div>
                               <div class="form-group">
-                                  <input type="text" class="form-control form-control-user" name="email" id="email" value="<?= set_value('email'); ?>" placeholder="Email Address">
+                                  <input type="text" class="form-control form-control-user" name="email" id="email" value="<?= set_value('email'); ?>" placeholder="Email anda..">
                                   <?= form_error('email', '<small class="text-danger ml-3">', '</small>') ?>
                               </div>
                               <div class="form-group row">
                                   <div class="col-sm-6 mb-3 mb-sm-0">
-                                      <input type="password" class="form-control form-control-user" id="password1" name="password1" placeholder="Password">
+                                      <input type="password" class="form-control form-control-user" id="password1" name="password1" placeholder="Isikan password..">
                                       <?= form_error('password1', '<small class="text-danger ml-3">', '</small>') ?>
                                   </div>
                                   <div class="col-sm-6">
-                                      <input type="password" class="form-control form-control-user" id="password2" name="password2" placeholder="Repeat Password">
+                                      <input type="password" class="form-control form-control-user" id="password2" name="password2" placeholder="Isikan password anda lagi..">
                                   </div>
                               </div>
-                              <button type="submit" class="btn btn-primary btn-user btn-block">
-                                  Register Account
+                              <button type="submit" class="btn btn-success btn-user btn-block">
+                                  daftar Akun
                               </button>
                           </form>
                           <hr>
                           <div class="text-center">
-                              <a class="small" href="forgot-password.html">Forgot Password?</a>
+                              <a class="small" href="forgot-password.html">Lupa Password?</a>
                           </div>
                           <div class="text-center">
-                              <a class="small" href="<?= base_url('auth') ?>">Already have an account? Login!</a>
+                              <a class="small" href="<?= base_url('auth') ?>">Sudah memiliki akun? </a>
                           </div>
                       </div>
                   </div>
