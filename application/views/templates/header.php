@@ -17,7 +17,9 @@
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Oxygen&display=swap" rel="stylesheet">
 
+    <link href="<?= base_url('assets/img/icon.ico'); ?>" rel="shortcut icon" />
 </head>
 
 <body id="page-top">

@@ -38,7 +38,7 @@
             </div>
             <div class="form-group row justify-content-end">
                 <div class="col-sm-10">
-                    <button type="submit" class="btn btn-success">Update</button>
+                    <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Update Profil</button>
                 </div>
             </div>
             </form>

@@ -2,18 +2,22 @@
 <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">ADMIN</sup></div>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('auth/'); ?>">
+        <div class="sidebar-brand-text mx-3"><?php
+
+                                                $iduser = $this->session->userdata('access');
+                                                if ($iduser == 1) {
+                                                    echo '<h3> Admin </h3>';
+                                                } else {
+                                                    echo '<h3> Member </h3>';
+                                                }
+                                                ?></div>
     </a>
 
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
-
     <!-- Nav Item - Dashboard -->
-
+    <br>
     <?php
     $access = $this->session->userdata('access');
     $queryMenu = "SELECT a.menu_id, a.menu FROM user_menu a JOIN user_access_menu b ON a.menu_id = b.menu_id WHERE b.access_id=$access ORDER BY b.menu_id ASC";

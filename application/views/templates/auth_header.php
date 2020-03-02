@@ -18,6 +18,10 @@
     <!-- Custom styles for this template-->
     <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
 
+    <link href="<?= base_url('assets/img/icon.ico'); ?>" rel="shortcut icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Oxygen|Prompt|Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body class="bg-gradient-success">
